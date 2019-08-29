@@ -6,12 +6,19 @@
 #include "Matematicas.h"
 #include "ScoreTools.h"
 
+int playerScore = 50;
+int enemyDamage[5] = { 10, 20, 30, 40, 50 };
+
 using namespace std;
 using namespace MariaTools;
 
 int main()
 {
-	cout << "Suma="<< SumaNumeros(100, 4)<<"\n";
-	cout << "Resta=" << pepe::SumaNumeros(100, 4);
-	cout << "Maxima puntuacion= " << MariaTools::ClampScore(200);
+	cout << "Puntuación del player = " << playerScore << "\n";
+	cout << "Ahora al player le ataca la segunda nave\n";
+	
+	DamagePlayer(1);
+
+	cout << "Puntuación del player = " << playerScore << "\n";
+
 }
